@@ -1,0 +1,8 @@
+You will write a C++ program that will optimize some 2D shapes and produce SVG (Scalable
+Vector Graphics) files to display calculated 2D graphics.
+Your program will have a main container shape (rectangle, circle). It will try to fit many
+small shapes (rectangle, circle ) in the main container shape by carefully placing these
+shapes into the container shape.
+The result file should be stored in result.svg
+
+
