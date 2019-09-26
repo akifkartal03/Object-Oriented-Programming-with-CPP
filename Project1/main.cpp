@@ -7,6 +7,6 @@ int main(){
     container contain;
     contain=cont();
     makefile(contain);
-    retur 0;
+    return 0;
 
 }
