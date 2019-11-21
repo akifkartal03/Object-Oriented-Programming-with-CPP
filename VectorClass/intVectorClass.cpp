@@ -52,6 +52,7 @@ GtuVector::GtuVector(const GtuVector& object):capacity(object.capacity),size(obj
 }
 GtuVector::~GtuVector(){
 	delete[] a;
+	NumberofVect--;
 }
 GtuVector& GtuVector::operator=(const GtuVector& rightSide){
 
@@ -250,10 +251,6 @@ void testMyVector(){
 	cout << v3;
 	cout << "after concat values of vectors" << endl;
 	cout << v1.concat(v2);
-	cout << "before incereme your capacity values of vectors" << endl;
-	cout << v1.getCapacity() << endl;
-	cout << "after incereme your capacity values of vectors" << endl;
-	v1=v1++;
-	cout << v1.getCapacity() << endl;
+	cout << GtuVector::getNumberofVector() << endl;
 	
 }
