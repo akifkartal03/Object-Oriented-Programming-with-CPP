@@ -34,7 +34,7 @@ Person::Person(){
 		cout << "enter age: ";
 	 	cin >> age;
 	}while(age<0);
-		cout << "enter gender(1-male / 2- female: ";
+	cout << "enter gender(1-male / 2- female: ";
 	cin >> c;
 	if (c==1)
 	{
