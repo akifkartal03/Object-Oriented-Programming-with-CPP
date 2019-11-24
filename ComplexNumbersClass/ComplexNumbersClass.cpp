@@ -71,7 +71,7 @@ bool ComplexNumbers::operator==(const ComplexNumbers& rightSide){
 ComplexNumbers& ComplexNumbers::operator=(const ComplexNumbers& rightSide){
 	/*
 		default assingment operator do same thing 
-		I just want tto get writing habit.
+		I just want to get writing habit.
 	*/
 	//member-wise copy
 	real=rightSide.real;
