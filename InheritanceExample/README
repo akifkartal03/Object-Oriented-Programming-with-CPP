@@ -55,3 +55,6 @@ class damageRecord{
  };
  
  All implementation up to you.
+ to compile my code you should use this;
+ g++ main.cpp person.cpp cyberTruck.cpp vehicle.cpp damage.cpp date.cpp
+ ./a.out
