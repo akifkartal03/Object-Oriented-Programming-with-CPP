@@ -2,7 +2,7 @@ Create a base class called Vehicle that has the manufacturer’s name (type stri
 number of cylinders in the engine (type int),int price and owner (type Person class).
 Also your base class will have a dynamic variable damages(type damagesRecords class),capacity and size.
 damagesRecords class contains date information for damage time so this class will have damageDate(type Date class).
-Some Class interface give to you  in the code that follows.
+Some Class interface given to you  in the code that follows.
 Then create a class called cyberTruck that is derived from Vehicle
 and has additional properties, the load capacity in tons (type double since it may
 contain a fractional part) and towing capacity in pounds (type int). Be sure your
