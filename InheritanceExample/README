@@ -58,3 +58,20 @@ class damageRecord{
  to compile my code you should use this;
  g++ main.cpp person.cpp cyberTruck.cpp vehicle.cpp damage.cpp date.cpp
  ./a.out
+My Output is;
+
+        *****Information of Your CyberTruck*****
+Manufacturer’s Name: Tesla
+Owner’s Name: Akif Kartal
+Owner’s ID: 1523478
+Number of Cylinder: 2
+Load Capacity: 15.2
+Towing Capacity: 500
+Price Of Truck: 49000$
+Safety Glass: No
+Self Drive: Yes
+***Your CyberTruck's 1. Damage Information***
+Damage Date: 22 November 2019
+Damage Location: Los Angeles in California in USA
+Damage Information: Glasses was broken in unveil show
+Damage Cost: 10000000$
