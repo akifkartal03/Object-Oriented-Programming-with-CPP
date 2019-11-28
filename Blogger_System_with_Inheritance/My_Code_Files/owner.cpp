@@ -14,7 +14,7 @@ namespace eagle{
         myInformations.setPassword("");
     }
     Owner::Owner(string name,int id,string password):Blog(),deleteCapacity(10),numberOfDeletedPost(0),myInformations(name,id,password){
-        
+        deletedPost=new Document[deleteCapacity];
     }
     Owner::Owner(const Owner& bObject):Blog(bObject),deleteCapacity(bObject.deleteCapacity),numberOfDeletedPost(bObject.numberOfDeletedPost){
         deletedPost=new Document[deleteCapacity];
