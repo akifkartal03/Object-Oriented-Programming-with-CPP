@@ -3,3 +3,11 @@ this vector.
 
 2) In this task you will write a recursive function that takes an integer number as a parameter. This function will convert your decimal 
 number to a binary number and print it on the screen. For example you will give 10 to function as an argument then it will print 1010.
+
+3) 
+  A) Write a recursive Template function that takes a vector and a key value. If the key value is in the vector your funcction will return
+  true otherwise it will return false.
+  
+  B) Write a recursive template function that takes a vector . If the vector contains repetitive elements then add this element another
+  vector and return a new vector.Also in this fuction you have to use funtion that mentioned above in "A" option.
+  
