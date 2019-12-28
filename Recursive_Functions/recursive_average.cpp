@@ -19,11 +19,11 @@ template<class T>
 double average(vector<T> v){
     static T sum=0;
     static int size=v.size();
-    if (v.size()==0)
+    if (v.size()==0) //base case
     {
         return 0;
     }
-    else
+    else //recursive case
     {
         sum=sum+v[v.size()-1];
         v.pop_back();
