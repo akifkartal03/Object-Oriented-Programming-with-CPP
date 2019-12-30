@@ -49,6 +49,7 @@ GtuVector::GtuVector(const GtuVector& object):capacity(object.capacity),size(obj
 	{
 		a[i]=object.a[i];
 	}
+	NumberofVect++;
 }
 GtuVector::~GtuVector(){
 	delete[] a;
