@@ -5,7 +5,7 @@ template<class T>
 bool findKey(vector<T> v,T key);
 void checkResult(bool value);
 template<class T>
-vector<T> getRepating(vector<T> v);
+vector<T> getRepating(vector<T> v,vector<T>& temp);
 int main(){
     bool result;
     vector<int> v1;
@@ -15,13 +15,15 @@ int main(){
     v1.push_back(15);
     v1.push_back(5);
     v1.push_back(15);
+    v1.push_back(10);
+    v1.push_back(10);
     result=findKey(v1,10);
     checkResult(result);
     result=findKey(v1,50);
     checkResult(result);
     result=findKey(v1,15);
     checkResult(result);
-    repeat=getRepating(v1);
+    repeat=getRepating(v1,repeat);
     auto p = repeat.begin();
     cout << "Your repeating values" << endl;
     for ( p=repeat.begin();  p!= repeat.end(); p++)
@@ -32,10 +34,9 @@ int main(){
 }
 template<class T>
 bool findKey(vector<T> v,T key){
-    bool res=false;
     if (v.size()==0) // base case
     {
-        return res;
+        return false;
     }
     else
     {
@@ -44,9 +45,8 @@ bool findKey(vector<T> v,T key){
             return true;
         }
         v.pop_back();
-        res=findKey(v,key); 
+        return findKey(v,key); 
     }
-    return res;
 }
 void checkResult(bool value){
     if (value)
@@ -59,36 +59,23 @@ void checkResult(bool value){
     }
 }
 template<class T>
-vector<T> getRepating(vector<T> v){
-    static vector<T> temp;
+vector<T> getRepating(vector<T> v,vector<T>& temp){
     if (v.size()==0)
     {
         return temp;
     }
     else
     {
-        if (findKey(v,v[v.size()-1]))
-        {
-            if (v.size()>1)
-            {
-                auto p = v.begin();
-                for ( p=v.begin();  p!= v.end(); p++)
-                {
-                    if (*p==v[v.size()-1])
-                    {
-                        break;
-                    }
-                }
-                v.erase(p);
-                if (findKey(v,v[v.size()-1]))
-                {
-                    temp.push_back(v[v.size()-1]);
-                }
-            }
-        }
+        T t=v[v.size()-1];
         v.pop_back();
-        getRepating(v);
+        if (findKey(v,t))
+        {
+            if (!findKey(temp,t))
+                temp.push_back(t);  
+        }
+        v.push_back(t);
+        v.pop_back();
+        return getRepating(v,temp);
         
     }
-    return temp;
 }
