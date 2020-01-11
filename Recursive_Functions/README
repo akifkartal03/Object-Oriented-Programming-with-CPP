@@ -9,7 +9,7 @@ number to a binary number and print it on the screen. For example you will give 
   true otherwise it will return false.
   
   B) Write a recursive template function that takes a vector . If the vector contains repetitive elements then add this element another
-  vector and return a new vector.Also in this fuction you have to use funtion that mentioned above in "A" option.
+  vector and return a new vector.Also in this function you have to use function that mentioned above in "A" option.
   
 4) Write a recursive template function that takes an array. This function will return maximum element of array.Don't use helper functions.
 
