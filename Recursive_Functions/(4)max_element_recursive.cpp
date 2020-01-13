@@ -26,3 +26,14 @@ T maxElement(T arr[],int size,T& max){
         return maxElement(arr,--size,max);
     }  
 }
+
+template<class T>
+T maxElement(T arr[],int size){
+    if (size == 1)//base case
+        return arr[size-1];
+    else
+    {
+        int max = maxElement(arr,size-1);
+        return max > arr[size-1] ? max : arr[size-1];
+    }  
+}
