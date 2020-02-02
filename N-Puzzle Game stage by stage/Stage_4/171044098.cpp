@@ -109,9 +109,8 @@ void NPuzzle::gameRealTime(string fileName,int gameType){
     else{ //if a filename entered
          readFromFile(fileName);
     }
-    main_board.is_solved();//check
     main_board.setTotalMoves(true);//set total move with zero
-    while (!end)
+    while (!getEnd())
     {
         cout << *this; //print();
         prefer=getDirection();
@@ -122,6 +121,7 @@ void NPuzzle::gameRealTime(string fileName,int gameType){
                  main_board.setTotalMoves(false);
         }
     }
+    cout << *this; //print();
     cout << endl  << "Problem Solved!" << endl; 
     cout << "Total number of moves " << main_board.numberofMoves() << endl;
 }
@@ -333,8 +333,7 @@ void NPuzzle::Board::getSolutionOfPuzzle(vector<vector<int>>& solutionOfPuzzle){
 
 }
 bool NPuzzle::getEnd() {
-    end=main_board.is_solved();
-    return end;
+    return main_board.is_solved();
 }
 /* my inline functions*/
 inline void NPuzzle::Board::setLastDirection(char last){
