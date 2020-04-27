@@ -1,1 +1,1 @@
-### In this big Project you will see that popular N-Puzzle game was done stage by stage by using all C++ and OOP features.
+#### In this big Project you will see that popular N-Puzzle game was done stage by stage by using all C++ and OOP features.
