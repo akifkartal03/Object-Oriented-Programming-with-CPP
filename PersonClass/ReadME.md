@@ -1,1 +1,1 @@
-## Just a basic class example.
+## A basic class example.

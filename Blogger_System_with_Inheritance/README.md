@@ -1,1 +1,1 @@
-### This is an inheritance project. I doesn't contain polymorphism yet.
+### A basic inheritance project. Check Inheritance_Project.pdf file for details.

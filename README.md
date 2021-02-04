@@ -1,3 +1,3 @@
-# CPP-Projects
+## CPP-Projects
 ### Implementation of OOP features with C++.
-### You can see My CSE241 Assingments in "N-Puzzle Game stage by stage" folder.
+### You can find My CSE241 Object Oriented Programming Course Assingments in "CSE241 Assignments" folder.
